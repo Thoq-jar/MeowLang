@@ -56,26 +56,43 @@
 Calculator.purr
 ```meowlang
 purr "Input an expression: "
-readstr
+watchstr
 purr "Result: "
-eval
+meow
 clear
-exit
-```
-Compare int:
-```meowlang
-readint
-readint
-sub
-jump.eq.0 L1
-purrln "Not equal!"
-exit
-
-L1:
-purrln "equal"
-exit
+good.night
 ```
 
+## Syntax explanation
+`purr` - prints without a \n
+
+`purrln` - prints with a \n
+
+`watchstr` - takes in string input
+
+`watchint` - takes in a integer input
+
+`clear` - clears the stack
+
+`good.night` - exits with return code '0'
+
+`meow` - evaluates the current data in stack
+
+`add` - adds a + b
+
+`sub` - subtracts a - b
+
+`mul` - multiplies a * b
+
+`div` - divides a / b
+
+`mod` - uses the modulo for a % b
+
+`cat` - Handles pushing a number from the program onto the stack and then moves to the next instruction.
+
+`leap.eq.0` - Handles a conditional jump based on whether the top value of the stack is zero. If it is zero, it jumps to a specific label; otherwise, it proceeds to the next instruction.
+
+`leap.gt.0` - Handles a conditional jump based on whether the top value of the stack is greater than zero. If it is greater than zero, it jumps to a specific label; otherwise, it proceeds to the next instruction.
 
 ## License 
 This project is licensed under the MIT license

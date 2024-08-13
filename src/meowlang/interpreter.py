@@ -26,7 +26,7 @@ def parser(program_lines):
         token_counter += 1
 
         match opcode:
-            case "push":
+            case "cat":
                 number = int(parts[1])
                 program.append(number)
                 token_counter += 1
@@ -38,11 +38,11 @@ def parser(program_lines):
                 string_literal = " ".join(parts[1:])[1:-1]
                 program.append(string_literal)
                 token_counter += 1
-            case "jump.eq.0":
+            case "leap.eq.0":
                 label = parts[1]
                 program.append(label)
                 token_counter += 1
-            case "jump.gt.0":
+            case "leap.gt.0":
                 label = parts[1]
                 program.append(label)
                 token_counter += 1
@@ -52,7 +52,7 @@ def parser(program_lines):
 
 def execute(opcode, program, pc, stack, label_tracker):
     match opcode:
-        case "push":
+        case "cat":
             number = program[pc]
             stack.push(number)
             pc += 1
@@ -78,7 +78,7 @@ def execute(opcode, program, pc, stack, label_tracker):
             a = stack.pop()
             b = stack.pop()
             stack.push(b % a)
-        case "eval":
+        case "meow":
             expression = stack.pop()
             try:
                 result = eval(expression)
@@ -95,19 +95,19 @@ def execute(opcode, program, pc, stack, label_tracker):
             string_literal = program[pc]
             print(string_literal)
             pc += 1
-        case "readstr":
+        case "watchstr":
             input_string = str(input())
             stack.push(input_string)
-        case "readint":
+        case "watchint":
             input_int = int(input())
             stack.push(input_int)
-        case "jump.eq.0":
+        case "leap.eq.0":
             number = stack.top()
             if number == 0:
                 pc = label_tracker[program[pc]]
             else:
                 pc += 1
-        case "jump.gt.0":
+        case "leap.gt.0":
             number = stack.top()
             if number > 0:
                 pc = label_tracker[program[pc]]
@@ -129,7 +129,7 @@ def interpret(program_filepath):
     pc = 0
     stack = Stack(256)
 
-    while program[pc] != "exit":
+    while program[pc] != "good.night":
         opcode = program[pc]
         pc += 1
         pc = execute(opcode, program, pc, stack, label_tracker)
@@ -141,7 +141,7 @@ def replInterpreter(code):
     pc = 0
     stack = Stack(256)
 
-    while pc < len(program) and program[pc] != "exit":
+    while pc < len(program) and program[pc]:
         opcode = program[pc]
         pc += 1
         pc = execute(opcode, program, pc, stack, label_tracker)

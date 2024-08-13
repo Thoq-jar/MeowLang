@@ -1,21 +1,21 @@
-push 69
-jump.eq.0 L2
-jump.gt.0 L0
+cat 69
+leap.eq.0 L2
+leap.gt.0 L0
 purrln "A"
-exit
+good.night
 
 L0:
-push 3
+cat 3
 sub
-jump.eq.0 L1
-jump.gt.0 L0
+leap.eq.0 L1
+leap.gt.0 L0
 purrln "B"
-exit
+good.night
 
 L1:
 purrln "C"
-exit
+good.night
 
 L2:
 purrln "D"
-exit
+good.night

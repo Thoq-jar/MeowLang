@@ -1,6 +1,6 @@
 purr "Input an expression: "
-readstr
+watchstr
 purr "Result: "
-eval
+meow
 clear
-exit
+good.night

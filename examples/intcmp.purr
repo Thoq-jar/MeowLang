@@ -1,10 +1,10 @@
-readint
-readint
+watchint
+watchint
 sub
-jump.eq.0 L1
+leap.eq.0 L1
 purrln "Not equal!"
-exit
+lights.out
 
 L1:
 purrln "equal"
-exit
+lights.out

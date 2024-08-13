@@ -1,4 +1,4 @@
-from meowlang.stack import Stack
+from src.meowlang.stack import Stack
 
 
 def read_file(program_filepath):

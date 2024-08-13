@@ -1,4 +1,4 @@
-from meowlang.interpreter import replInterpreter
+from src.meowlang.interpreter import replInterpreter
 
 
 def repl():

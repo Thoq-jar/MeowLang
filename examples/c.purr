@@ -1,0 +1,21 @@
+push 69
+jump.eq.0 L2
+jump.gt.0 L0
+purrln "A"
+exit
+
+L0:
+push 3
+sub
+jump.eq.0 L1
+jump.gt.0 L0
+purrln "B"
+exit
+
+L1:
+purrln "C"
+exit
+
+L2:
+purrln "D"
+exit

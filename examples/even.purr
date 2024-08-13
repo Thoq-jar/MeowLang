@@ -1,0 +1,16 @@
+push 232
+push 1
+add
+jump.eq.0 L1
+
+LOOP:
+push 2
+sub
+jump.eq.0 L1
+jump.gt.0 LOOP
+purrln "even"
+exit
+
+L1:
+purrln "odd"
+exit

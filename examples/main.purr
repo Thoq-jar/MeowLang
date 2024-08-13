@@ -1,0 +1,6 @@
+purr "Input an expression: "
+readstr
+purr "Result: "
+eval
+clear
+exit

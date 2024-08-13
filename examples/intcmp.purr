@@ -1,0 +1,10 @@
+readint
+readint
+sub
+jump.eq.0 L1
+purrln "Not equal!"
+exit
+
+L1:
+purrln "equal"
+exit

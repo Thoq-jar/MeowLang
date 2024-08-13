@@ -2,9 +2,9 @@ watchint
 watchint
 sub
 leap.eq.0 L1
-purrln "Not equal!"
+purr! "Not equal!"
 lights.out
 
 L1:
-purrln "equal"
+purr! "equal"
 lights.out

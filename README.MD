@@ -5,7 +5,7 @@
 > Designed to be a fun project not meant for real-world use.
 
 ## Instalation
-
+> How to install and run
 -   Step 1:
 
     Clone the repo with [git](https://git-scm.com/)
@@ -28,11 +28,11 @@
     Run your code:
 
     With PyPy (Recomended):
-    ```shell
+    ```bash
     pypy3 meow.py examples/main.purr
     ```
     With python:
-     ```shell
+     ```bash
     python3 meow.py
     ```
     This will run a calculator application
@@ -42,14 +42,39 @@
     Meowlang includes a repl interface, to launch it simply run:
 
     With PyPy (Recomended):
-    ```shell
+    ```bash
     pypy3 meow.py
     ```
     With python:
-    ```shell
+    ```bash
     python3 meow.py
     ```
 
+# First Meowlang program
+> Basic 'Hello, World' program
+- Step 1
+
+    Create a file with a .purr, .meow or .🐱 extension.
+
+- Step 2:
+    
+    Put this in the file
+    ```meowlang
+    purr! "Hello, Cats!"
+    good.night
+    ```
+- Step 3:
+
+    Run the program (extenstion changes based on your choice above)
+    ```bash
+    pypy3 meow.py cat.🐱 
+    ```
+    ```bash
+    pypy3 meow.py cat.purr
+    ```
+    ```bash
+    pypy3 meow.py cat.meow
+    ```
 # Samples
 >Code samples
 
@@ -64,9 +89,11 @@ good.night
 ```
 
 ## Syntax explanation
+> What the syntax is and what it does
+
 `purr` - prints without a \n
 
-`purrln` - prints with a \n
+`purrr` - prints with a \n
 
 `watchstr` - takes in string input
 
@@ -95,8 +122,18 @@ good.night
 `leap.gt.0` - Handles a conditional jump based on whether the top value of the stack is greater than zero. If it is greater than zero, it jumps to a specific label; otherwise, it proceeds to the next instruction.
 
 ## License 
+> License for Meowlang
+
 This project is licensed under the MIT license
 
 
-# Cat
+## Cat
 > Cats, as you know, are quite impervious to threats. -Connie Willis
+
+## Credits
+> This project is based on [bvdl.io's](https://github.com/basvdl97) interpreter 
+from [this git repo](https://github.com/basvdl97/OLL-Interpreter). 
+
+> They have a tutorial to make your own fun language [here](https://www.youtube.com/watch?v=A3gTw1ZkeK0&t=150s)!
+
+> You should watch is as it containes a lot of good information!

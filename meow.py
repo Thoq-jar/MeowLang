@@ -7,8 +7,8 @@ if len(sys.argv) != 2:
     exit(1)
 
 path = sys.argv[1]
-if not path.endswith(".purr"):
-    print("Invalid file format. File must have a .purr extension.")
+if not path.endswith(".purr") and not path.endswith(".meow") and not path.endswith(".🐱"):
+    print("Invalid file format! File must have a .purr, .meow or .🐱 extension.")
     exit(1)
 
 interpret(path)

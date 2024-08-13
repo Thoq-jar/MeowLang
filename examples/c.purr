@@ -1,7 +1,7 @@
 cat 69
 leap.eq.0 L2
 leap.gt.0 L0
-purrln "A"
+purr! "A"
 good.night
 
 L0:
@@ -9,13 +9,13 @@ cat 3
 sub
 leap.eq.0 L1
 leap.gt.0 L0
-purrln "B"
+purr! "B"
 good.night
 
 L1:
-purrln "C"
+purr! "C"
 good.night
 
 L2:
-purrln "D"
+purr! "D"
 good.night

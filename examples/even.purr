@@ -8,9 +8,9 @@ cat 2
 sub
 leap.eq.0 L1
 leap.gt.0 LOOP
-purrln "even"
+purr! "even"
 good.night
 
 L1:
-purrln "odd"
+purr! "odd"
 good.night

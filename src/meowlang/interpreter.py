@@ -34,7 +34,7 @@ def parser(program_lines):
                 string_literal = " ".join(parts[1:])[1:-1]
                 program.append(string_literal)
                 token_counter += 1
-            case "purrln":
+            case "purr!":
                 string_literal = " ".join(parts[1:])[1:-1]
                 program.append(string_literal)
                 token_counter += 1
@@ -91,7 +91,7 @@ def execute(opcode, program, pc, stack, label_tracker):
             string_literal = program[pc]
             print(string_literal, end="")
             pc += 1
-        case "purrln":
+        case "purr!":
             string_literal = program[pc]
             print(string_literal)
             pc += 1

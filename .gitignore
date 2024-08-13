@@ -1,1 +1,7 @@
 video/
+__pycache__
+*.pyc
+src/meowlang/__pycache__
+src/meowlang/__pycache__/interpreter.pypy310.pyc
+src/meowlang/__pycache__/repl.pypy310.pyc
+src/meowlang/__pycache__/stack.pypy310.pyc
